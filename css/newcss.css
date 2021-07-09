@@ -1,0 +1,58 @@
+*{
+    max-width: 100%;
+    font-family: Helvetica, sans-serif, Arial;
+    /*color: rgb(24, 161, 6);*/
+}
+h1{
+    text-decoration: underline;
+    padding: 5px;
+}
+
+ul{
+    list-style-type: none;   
+}
+.card1{
+    background-color: rgb(181, 216, 181);
+}
+/*
+.card1 p{
+    color: #575656;
+}
+.btn{   
+    color: #575656
+}*/
+.btn a{
+    color: #575656;
+}
+
+@media only screen and (max-device-width: 415px){
+.burger{
+    margin: 0;
+    padding: 0;
+    }
+.logo{
+    max-width: 150px;
+    max-height: 100px;
+}
+
+}
+@media only screen and (max-device-width: 530px){
+.social{
+    display: inline-flex;
+    margin-left: 100px;
+    }
+}
+/*carousel*/
+
+.carousel-item img{
+    position: relative;
+    justify-items: bottom;
+    object-fit: contain;
+    padding-bottom: 1em;
+}
+@media only screen and (min-device-width: 1200px) {
+    .carol{
+        max-width: 1000px }
+    
+        
+}
