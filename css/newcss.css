@@ -1,7 +1,7 @@
 *{
     max-width: 100%;
     font-family: Helvetica, sans-serif, Arial;
-    /*color: rgb(24, 161, 6);*/
+    color:#555;
 }
 h1{
     text-decoration: underline;
@@ -23,6 +23,10 @@ ul{
 }*/
 .btn a{
     color: #575656;
+}
+.social {
+    height: 50px;
+    width: 50px;
 }
 
 @media only screen and (max-device-width: 415px){
