@@ -5,7 +5,7 @@
     
 }
 body{
-    background-image: url(/images/background8.png);
+    background-image: url(background8.png);
     position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,5 +61,4 @@ ul{
     .carol{
         max-width: 1000px }
     
-        
 }
