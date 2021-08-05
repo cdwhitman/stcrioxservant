@@ -55,8 +55,7 @@ ul{
 }
 /*carousel*/
 
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-device-width: 1000px) {
     .carol{
         max-width: 1000px }
-    
-}
+    }
