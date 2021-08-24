@@ -15,8 +15,12 @@
 <body> 	
 	<nav class="navbar navbar-light navbar-expand-lg">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="index.html">
-			<img src="images/stcroixservantlogo.png" alt="St Croix Servant" width="220" height="150" class="rounded d-inline-block logo">
+		  <a class="logo navbar-brand" href="index.html">
+			<picture>
+				<source srcset="images/stcroixservantlogo.webp" type="image/webp">
+				<source srcset="images/stcroixservantlogo.png" type="image/png">
+				<img src="images/stcroixservantlogo.png"  alt="logo" width="220" height="150" class="rounded d-inline-block align-text-top">
+			</picture>
 		  </a>
 
 		  <button
@@ -80,16 +84,34 @@
 			<video class="video-fluid d-block w-100 rounded" playsinline autoplay loop muted src="images/promoVideo.mp4"  alt="St. Croix Servant video" >
 		  </div>
 		  <div class="carousel-item carol">
-			<img src="images/lawnMowing.jpg" class="d-block w-100 rounded" alt="lawn mowing">
+			<picture>
+				<source srcset="images/lawnMowing.webp" type="image/webp">
+				<source srcset="images/lawnMowing.jpg" type="image/jpg">
+				<img src="images/lawnMowing.jpg" class="d-block w-100 rounded" alt="lawn mowing">
+			</picture>
 		  </div>
 		  <div class="carousel-item carol">
-			<img src="images/qualityLawnCare.jpg" class="d-block w-100 rounded" alt="quality lawn care">
+			<picture>
+				<source srcset="images/qualityLawnCare.webp" type="image/webp">
+				<source srcset="images/qualityLawnCare.jpg" type="image/jpg">
+				<img src="images/qualityLawnCare.jpg" class="d-block w-100 rounded" alt="quality lawn care">
+			</picture>
 		  </div>
 		  <div class="carousel-item carol">
-			<img src="images/lawnCutting.jpg" class=" d-block w-100 rounded" alt="lawn cutting">
+			<picture>
+				<source srcset="images/lawnCutting.webp" type="image/webp">
+				<source srcset="images/lawnCutting.jpg" type="image/jpg">
+				<img src="images/lawnCutting.jpg" class=" d-block w-100 rounded" alt="lawn cutting">
+			</picture>
+			
 		  </div>
 		  <div class="carousel-item carol">
-			<img src="images/affordableLawnCare.jpg" class="d-block w-100 rounded" alt="affordable lawn care">
+			<picture>
+				<source srcset="images/affordableLawnCare.webp" type="image/webp">
+				<source srcset="images/affordableLawnCare.jpg" type="image/jpg">
+				<img src="images/affordableLawnCare.jpg" class="d-block w-100 rounded" alt="affordable lawn care">
+			</picture>
+			
 		  </div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselDisplay" data-bs-slide="prev">
@@ -212,7 +234,7 @@
 </div>
 
 	
-	
+	<script src="modernizr-custom.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>	
