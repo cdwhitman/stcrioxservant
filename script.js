@@ -12,12 +12,6 @@ const testimonials = [
     text:
       "\"Dan is a thoughtful and kind man, as well as a darn good tender of the earth. I love that he helps me tend to my yard each year.\"",
   },
-  {
-    name: '-Brendan J',
-    text:
-      "\"Great customer service and friendly, knowledgeable service staff.\"",
-  },
-  
 ]
 
 let idx = 1
