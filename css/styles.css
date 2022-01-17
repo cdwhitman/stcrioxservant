@@ -1,103 +1,121 @@
-*{
-    max-width: 100%;
-    font-family: 'Roboto', sans-serif;
-    color:#353333;
-    
+* {
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #353333;
 }
-.webp body{
-    background-image: url(/images/background8.webp);
-    position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.webp body {
+  background-image: url(/images/background8.webp);
+  position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.no-webp body{
-    background-image: url(/images/background8.png);
-    position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.no-webp body {
+  background-image: url(/images/background8.png);
+  position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .modal-content {
-    background-color: #e7f2fa;
+  background-color: #e7f2fa;
 }
 .card2 {
-    background-color: rgba(0, 0, 0, .02);
+  background-color: rgba(0, 0, 0, 0.02);
 }
-h1{
-    padding: 5px;
+h1 {
+  padding: 5px;
 }
 
-ul{
-    list-style-type: none;   
+ul {
+  list-style-type: none;
 }
-.card1{
-    background-color: rgba(181, 216, 181, 0.89);
+.card1 {
+  background-color: rgba(181, 216, 181, 0.89);
 }
-.btn a{
-    color: #575656;
+.set-height {
+  height: 160px;
+}
+.btn a,
+.btn a:hover {
+  color: #3b3b3b;
 }
 .social {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
+}
+.nav-item-bg {
+  background-color: #36aeff;
+}
+.btn-info {
+  background-color: #36aeff;
+  border-color: #36aeff;
+}
+.btn-outline-info {
+  border-color: #36aeff;
+  color: #36aeff;
+}
+.btn-info:hover,
+.btn-outline-info:hover {
+  background-color: #36aeff;
 }
 
-@media only screen and (max-device-width: 530px){
-.social{
+@media only screen and (max-device-width: 530px) {
+  .social {
     display: inline-flex;
     margin-left: 100px;
-    }
+  }
 }
 /*carousel*/
 
-    .carol{
-        max-width: 900px ;}
+.carol {
+  max-width: 900px;
+}
 
 /* Testimonials */
 
-  .testimonial {
-    line-height: 28px;
-    text-align: justify;
-  }
-    
-  .progress-bar {
-    background-color: rgba(53, 51, 51, .5);
-    height: 4px;
-    width: 100%;
-    animation: grow 10s linear infinite;
-    transform-origin: left;
-  }
-  
-  @keyframes grow {
-    0% {
-      transform: scaleX(0);
-    }
-  }
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
 
-  /* form */
-  .form-container{
-      max-width: 700px;
-      background-color: rgba(181, 216, 181, 0.60);
+/* .progress-bar {
+  background-color: rgba(53, 51, 51, 0.5);
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
   }
-  .submit{
-      width: 100%;
-  }
-  .form-container input{
-      background-color: rgba(53, 51, 51, .2);
-  }
-  .form-container textarea{
-    background-color: rgba(53, 51, 51, .2);
+} */
+
+/* form */
+.form-container {
+  max-width: 700px;
+  background-color: rgba(181, 216, 181, 0.6);
+}
+.submit {
+  width: 100%;
+}
+.form-container input {
+  background-color: rgba(53, 51, 51, 0.2);
+}
+.form-container textarea {
+  background-color: rgba(53, 51, 51, 0.2);
 }
 .form-check-input:checked {
-    background-color: #5bc0de;
-    border: solid 1px #5bc0de ;
+  background-color: #5bc0de;
+  border: solid 1px #5bc0de;
 }
 .form-check-input:hover {
-    background-color: rgba(53, 51, 51, .0);
-    border: solid 3px #5bc0de ;
+  background-color: rgba(53, 51, 51, 0);
+  border: solid 3px #5bc0de;
 }
-#my-form-status.success{
-    color: #fff;
-    background-color: green;
-    border: solid 2px #fff;
-    animation: status 4s ease forwards;
+#my-form-status.success {
+  color: #fff;
+  background-color: green;
+  border: solid 2px #fff;
+  animation: status 4s ease forwards;
 }
-
