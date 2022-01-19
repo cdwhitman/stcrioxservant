@@ -32,7 +32,9 @@ ul {
   background-color: rgba(181, 216, 181, 0.89);
 }
 .set-height {
-  height: 160px;
+  display: flex;
+  justify-content: center;
+  height: 220px;
 }
 .btn a,
 .btn a:hover {
@@ -62,6 +64,9 @@ ul {
   .social {
     display: inline-flex;
     margin-left: 100px;
+  }
+  .set-height {
+    height: 300px;
   }
 }
 /*carousel*/
