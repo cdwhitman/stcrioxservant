@@ -1,5 +1,4 @@
 // form script
-var form = document.getElementById('my-form');
 
 window.onload = function () {
   var el = document.getElementById('g-recaptcha-response');
@@ -7,6 +6,8 @@ window.onload = function () {
     el.setAttribute('required', 'required');
   }
 };
+
+var form = document.getElementById('my-form');
 
 async function handleSubmit(event) {
   event.preventDefault();
@@ -20,15 +21,28 @@ async function handleSubmit(event) {
     }
   })
     .then((response) => {
-      form.reset();
-      status.innerHTML = 'Your Request Has Been Sent!';
-      status.classList.add('success');
-      setTimeout(function () {
-        status.classList.remove('success');
-      }, 4000);
-      setTimeout(function () {
-        status.innerHTML = 'Get Your Free Quote!';
-      }, 4000);
+      if (response.ok) {
+        status.innerHTML = 'Your Request Has Been Sent!';
+        status.classList.add('success');
+        setTimeout(function () {
+          status.classList.remove('success');
+        }, 4000);
+        setTimeout(function () {
+          status.innerHTML = 'Get Your Free Quote!';
+        }, 4000);
+        form.reset();
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, 'errors')) {
+            console.log(
+              data['errors'].map((error) => error['message']).join(', ')
+            );
+            status.innerHTML = 'There was a problem submitting your form';
+          } else {
+            status.innerHTML = 'There was a problem submitting your form';
+          }
+        });
+      }
     })
     .catch((error) => {
       status.innerHTML = 'There was a problem submitting your form';
