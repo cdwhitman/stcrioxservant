@@ -59,6 +59,13 @@ ul {
 .btn-outline-info:hover {
   background-color: #36aeff;
 }
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
 
 @media only screen and (max-device-width: 530px) {
   .social {
